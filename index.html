@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ffd6ec">
+<title>Happy Birthday, Dear Cousin Ji! ♥️</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="floaters" aria-hidden="true"></div>
+<canvas id="confetti" aria-hidden="true"></canvas>
+
+<main>
+<!-- SCREEN 1 -->
+<section class="screen active" id="s1">
+  <div class="bow">🎀</div>
+  <h1 class="rainbow">Happy Birthday, Karan! 🎀</h1>
+  <p class="big">I made a tiny birthday surprise just for you. 💗</p>
+  <div class="btns">
+    <button class="btn pink" id="yes">YAYYY, SHOW ME! 💗</button>
+    <button class="btn grey" id="no">Wait, what? 🙄</button>
+  </div>
+  <p class="tease" id="tease" aria-live="polite"></p>
+</section>
+
+<!-- SCREEN 2 -->
+<section class="screen" id="s2">
+  <h2>A little birthday cake 🎂</h2>
+  <p>Close your eyes, make a big wish, and get ready to blow out those candles.</p>
+  <div class="cake" id="cake">
+    <div class="candles">
+      <div class="candle"><i class="flame"></i></div>
+      <div class="candle"><i class="flame"></i></div>
+      <div class="candle"><i class="flame"></i></div>
+    </div>
+    <div class="tier t3"></div><div class="tier t2"></div><div class="tier t1"></div>
+    <div class="plate"></div>
+  </div>
+  <button class="btn purple" id="blow">🌬️ Blow the candles</button>
+  <p class="msg hidden" id="blownMsg">Wish made? Candles blown! Happiest birthday! 🎉</p>
+  <button class="btn pink hidden" id="c2">Continue 🎈</button>
+</section>
+
+<!-- SCREEN 3 -->
+<section class="screen" id="s3">
+  <div class="balloons" aria-hidden="true"><span>🎈</span><span>🎈</span><span>🎈</span></div>
+  <h2 class="rainbow">Happiest Birthday, Karan! ♥️</h2>
+  <p class="card">May your days be full of laughter, good surprises, great food, and memories that make you smile for years.</p>
+  <p class="card alt">And may you finally become a little less dramatic. No promises, though. 😂💅</p>
+  <button class="btn yellow" id="c3">Your flowers are waiting 💐</button>
+</section>
+
+<!-- SCREEN 4 -->
+<section class="screen" id="s4">
+  <h2>Pick your flowers 💐</h2>
+  <div class="bouquets">
+    <button class="gift" data-name="Sunshine Bouquet" data-msg="Sunshine Bouquet picked! Because you make every day a little brighter. 🌻">
+      <span class="em">🌻🌼🌻</span><b>Sunshine Bouquet</b><small>For brighter days.</small></button>
+    <button class="gift" data-name="Pretty in Pink" data-msg="Pretty in Pink picked! Obviously. A lovely human deserves lovely flowers. 🌸">
+      <span class="em">🌷🌸🌷</span><b>Pretty in Pink</b><small>For a lovely human.</small></button>
+    <button class="gift" data-name="Classic Roses" data-msg="Classic Roses picked! A timeless choice for a timeless cousin. 🌹">
+      <span class="em">🌹💐🌹</span><b>Classic Roses</b><small>A timeless favourite.</small></button>
+  </div>
+  <p class="msg" id="flowerMsg" aria-live="polite">Tap a bouquet to choose it.</p>
+  <button class="btn pink hidden" id="c4">Open your letter 💌</button>
+</section>
+
+<!-- SCREEN 5 -->
+<section class="screen" id="s5">
+  <article class="letter">
+    <div class="hearts" aria-hidden="true">♥ ♥ ♥</div>
+    <p>Dear Karan, ♥️</p>
+    <p><strong>✍️ EDIT THIS LETTER:</strong> Replace the starter text below with your own words, memories, jokes, and wishes before publishing.</p>
+    <p>Happy birthday! I hope your day is full of laughter, happiness, and all your favourite things. 💗</p>
+    <p>Write your own paragraph here — add a memory, an inside joke, or something you want him to know.</p>
+    <p>Add another paragraph here whenever you want. This letter is yours to personalise.</p>
+    <p>With lots of love,</p>
+    <p class="sign">Your signature here 🎀</p>
+  </article>
+  <button class="btn purple" id="c5">One last surprise 🎁</button>
+</section>
+
+<!-- SCREEN 6 -->
+<section class="screen" id="s6">
+  <h1 class="rainbow">Happy Birthday! ♥️🥹</h1>
+  <p class="big">I hope this little corner of the internet made you smile.</p>
+  <p class="card">Now go enjoy your day, birthday boy. And remember: you're welcome for this masterpiece. 😂💅</p>
+  <button class="btn pink" id="replay">🔄 Replay the Surprise</button>
+</section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
